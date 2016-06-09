@@ -4,5 +4,9 @@
   "version": "0.0.0",
   "dependencies": {
     "angular": "1.5.x"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0"
   }
 }
