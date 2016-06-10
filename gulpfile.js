@@ -19,15 +19,7 @@ gulp.task('reload', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['./Unit2/*.html'], ['reload']);
-});
-
-gulp.task('my-tests', function() {
-  connect.server({
-    port: 1820
-  });
-
-  connect.serverClose();
+  gulp.watch(['./**'], ['reload']);
 });
 
 gulp.task('default', ['connect', 'watch']);

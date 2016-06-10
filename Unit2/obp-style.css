@@ -25,6 +25,11 @@ body > header h2 {
   color: #ecf0f1;
   margin:-1em 0 0 2em;
 }
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
 nav a {
   text-decoration: none;
   font-family: Tahoma, Arial;
@@ -104,4 +109,12 @@ nav li {
 form h3 {
   font-size: 1em;
   margin: 0;
+}
+#homePage {
+  background-color: #bdc3c7;
+  color: white;
+  margin:0 auto;
+  padding: 1em 1em 1em 1em;
+  width: 32em;
+  height: 30em;
 }
