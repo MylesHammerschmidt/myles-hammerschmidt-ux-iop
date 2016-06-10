@@ -1,9 +1,5 @@
 var gulp = require('gulp');
-  connect = require('gulp-connect');
-
-gulp.task('default', function() {
-  connect();
-});
+var connect = require('gulp-connect');
 
 gulp.task('connect', function() {
   connect.server({
@@ -14,8 +10,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('reload', function () {
-  gulp.src('./**')
-    .pipe(connect.reload());
+  connect.reload();
 });
 
 gulp.task('watch', function () {
