@@ -7,13 +7,14 @@ gulp.task('default', function() {
 
 gulp.task('connect', function() {
   connect.server({
-    root: 'http://localhost:1820',
+    root: './',
+    port: 1820,
     livereload: true
   });
 });
 
 gulp.task('reload', function () {
-  gulp.src('./app/*.*')
+  gulp.src('./**')
     .pipe(connect.reload());
 });
 
