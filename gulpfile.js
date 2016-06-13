@@ -1,7 +1,7 @@
-var gulp = require('gulp');
+var gulp = require('gulp-help')(require('gulp'));
 var connect = require('gulp-connect');
 
-gulp.task('connect', function() {
+gulp.task('connect', 'Connects to localhost:1820', function() {
   connect.server({
     root: './',
     port: 1820,
@@ -9,12 +9,13 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('reload', function () {
-  connect.reload();
+gulp.task('rel', 'Reload task', function () {
+  gulp.src('./*')
+    .pipe(connect.reload());
 });
 
-gulp.task('watch', function () {
-  gulp.watch(['./**'], ['reload']);
+gulp.task('watch', 'Watch task', function () {
+  gulp.watch(['./**'], ['rel']);
 });
 
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', 'Automatically connects to localhost:1820', ['connect', 'watch']);
