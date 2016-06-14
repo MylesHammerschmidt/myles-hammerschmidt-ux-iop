@@ -1,4 +1,4 @@
-/* testml5 CSS */
+a/* testml5 CSS */
 header, hgroup, nav{display:block}
 
 html{background:white}
@@ -36,6 +36,7 @@ nav a {
   color: white;
   padding: .5em;
   border: 1px solid;
+  border-radius: 0.2em;
 }
 nav a:hover {
   color: #ecf0f1;
@@ -66,6 +67,7 @@ nav li {
   padding: 1em 1em 1em 1em;
   width: 32em;
   height: 30em;
+  border-radius: 0.2em;
 }
 #userProfile h1 {
   margin: 0;
@@ -87,6 +89,7 @@ nav li {
   padding: 1em 1em 1em 1em;
   width: 32em;
   height: 30em;
+  border-radius: 0.2em;
 }
 #userList th {
   text-align: left
@@ -105,6 +108,7 @@ nav li {
   padding: 1em 1em 1em 1em;
   width: 32em;
   height: 30em;
+  border-radius: 0.2em;
 }
 form h3 {
   font-size: 1em;
@@ -113,8 +117,9 @@ form h3 {
 #homePage {
   background-color: #bdc3c7;
   color: white;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 1em 1em 1em 1em;
   width: 32em;
   height: 30em;
+  border-radius: 0.2em;
 }

@@ -1,0 +1,56 @@
+html {
+  background: white; }
+
+.pageHeader {
+  font-family: Helvetica, Arial, Tahoma, sans-serif;
+  background-color: #bdc3c7;
+  padding: 1em 1em 1em 1em; }
+  .pageHeader a {
+    text-decoration: none;
+    color: inherit; }
+  .pageHeader h1 {
+    color: #FFFFFF;
+    margin-top: 1em;
+    margin-left: 1.5em; }
+  .pageHeader h2 {
+    color: #ecf0f1;
+    margin: -1em 0 0 2em; }
+  .pageHeader nav ul {
+    margin: 1em 1em 1em 2em;
+    padding: 1em 0 0 0;
+    text-align: left; }
+  .pageHeader nav li {
+    display: inline;
+    padding-left: 1em; }
+  .pageHeader nav a {
+    color: white;
+    padding: .5em;
+    border: 1px solid;
+    border-radius: 0.2em; }
+  .pageHeader nav a:hover {
+    color: #ecf0f1; }
+  .pageHeader nav .current {
+    font-weight: bold;
+    border: 1px dotted; }
+
+body {
+  font-family: Helvetica, Arial, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0 auto;
+  width: 40em;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 0.2em; }
+  body .pageTitle {
+    color: #95a5a6;
+    margin-left: 2em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em; }
+  body article {
+    background-color: #bdc3c7;
+    color: white;
+    margin: 0 auto;
+    padding: 1em 1em 1em 1em;
+    width: 32em;
+    height: 30em;
+    border-radius: 0.2em; }
