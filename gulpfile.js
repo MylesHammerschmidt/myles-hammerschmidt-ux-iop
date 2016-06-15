@@ -24,7 +24,8 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', 'Watch task', function () {
-  gulp.watch(['./**/*.html', './**/*.css', './**/*.scss'], ['rel', 'sass']);
+  gulp.watch(['./**/*.html', './**/*.css'], ['rel']);
+  gulp.watch(['./**/*.scss'], ['sass']);
 });
 
 gulp.task('default', 'Automatically connects to localhost:1820', ['connect', 'watch']);
