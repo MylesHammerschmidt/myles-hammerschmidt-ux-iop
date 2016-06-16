@@ -55,6 +55,8 @@ html{
     a:hover {
       color: #ecf0f1;
       background-color: #bdc3c7;
+      background: radial-gradient(#bdc3c7, #bdc3c7, #ecf0f1);
+      opacity: 1.0;
     }
     .current {
       font-weight: bold;
@@ -78,14 +80,16 @@ body {
 
   .pageTitle {
     color: #FFFFFF;
-    text-shadow: 0px 0px 5px #2c3e50;
-    margin-left: 2em;
+    background-color:#bdc3c7;
+    text-align: left;
+    text-shadow: 0px 0px 2px black;
+    padding-left: 2em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
   }
 
   article {
-    background-color: #95a5a6;
+    background-color: #bdc3c7;
     color: white;
     margin: 0 auto;
     padding: 1em 1em 1em 1em;
@@ -93,7 +97,6 @@ body {
     height: 30em;
     border: $border-uni;
     border-radius: $border-rad;
-    box-shadow: $stdShadow;
   }
 }
 

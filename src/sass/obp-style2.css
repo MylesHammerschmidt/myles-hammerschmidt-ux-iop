@@ -38,7 +38,9 @@ html {
       border-radius: 0.4em; }
     .pageHeader nav a:hover {
       color: #ecf0f1;
-      background-color: #bdc3c7; }
+      background-color: #bdc3c7;
+      background: radial-gradient(#bdc3c7, #bdc3c7, #ecf0f1);
+      opacity: 1.0; }
     .pageHeader nav .current {
       font-weight: bold;
       border: 1px dotted;
@@ -57,20 +59,21 @@ body {
   box-shadow: 0px 0px 20px 0px #95a5a6; }
   body .pageTitle {
     color: #FFFFFF;
-    text-shadow: 0px 0px 5px #2c3e50;
-    margin-left: 2em;
+    background-color: #bdc3c7;
+    text-align: left;
+    text-shadow: 0px 0px 2px black;
+    padding-left: 2em;
     margin-top: 0.3em;
     margin-bottom: 0.3em; }
   body article {
-    background-color: #95a5a6;
+    background-color: #bdc3c7;
     color: white;
     margin: 0 auto;
     padding: 1em 1em 1em 1em;
     width: 32em;
     height: 30em;
     border: 1px solid #95a5a6;
-    border-radius: 0.4em;
-    box-shadow: 0px 0px 5px 0px #95a5a6; }
+    border-radius: 0.4em; }
 
 #homePageContent {
   position: relative; }
