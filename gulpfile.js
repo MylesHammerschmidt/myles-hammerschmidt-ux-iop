@@ -18,14 +18,14 @@ gulp.task('rel', 'Reload task', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('./**/*.scss')
+  return gulp.src('./**/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./'));
 });
 
 gulp.task('watch', 'Watch task', function () {
   gulp.watch(['./**/*.html', './**/*.css'], ['rel']);
-  gulp.watch(['./**/*.scss'], ['sass']);
+  gulp.watch(['./**/sass/*.scss'], ['sass']);
 });
 
 gulp.task('default', 'Automatically connects to localhost:1820', ['connect', 'watch']);
