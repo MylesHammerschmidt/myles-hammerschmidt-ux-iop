@@ -25,27 +25,37 @@
 
   <h1 class="pageTitle"> User Profile </h1>
 
-  <article id="userProfile">
+  <article>
     <header>
-      <h1>John Smith</h1>
-      <h2>'s profile</h2>
+      <h1>
+        <img class="profilePic" src="sass/caveman.jpg"/>
+        <strong>John Smith</strong>'s Profile
+      </h1>
+      <button class="btn-userMinimize" onclick="minimize()">
+        Hide Info
+      </button>
     </header>
-
-    <table>
-      <tr>
-        <td>User ID:</td>
-        <td>xXsW4GSL4Y3rXx</td>
-      </tr>
-      <tr>
-        <td>Phone:</td>
-        <td>417-XXX-XXXX</td>
-      </tr>
-      <tr>
-        <td>Email:</td>
-        <td>XXXXXXXXX@email.com</td>
-      </tr>
-    </table>
-
+    <div class = "userProfile">
+      <table>
+        <tr>
+          <th>User ID:</th>
+          <td>xXsW4GSL4Y3rXx</td>
+        </tr>
+        <tr>
+          <th>Phone:</th>
+          <td>417-XXX-XXXX</td>
+        </tr>
+        <tr>
+          <th>Email:</th>
+          <td>XXXXXXXXX@email.com</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function minimize() {
+        document.getElementsByClassName("userProfile").style.display = none;
+      }
+    </script>
   </article>
 
 </body>
