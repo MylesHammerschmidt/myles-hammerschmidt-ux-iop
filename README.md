@@ -1,11 +1,17 @@
 # myles-hammerschmidt-ux-iop
-The most valuable repository in the history of anything ever.
+UX Onboarding Project
 
-## Title
+## Title: ONBOARDING PROJECT
 
-## Description
+## Description:
+A basic website.
+
 
 ## How to Use
+
+Navigate the pages (carefully).
+
+The User Profile page has a button to show/hide content.
 
 ## Dependencies
 
