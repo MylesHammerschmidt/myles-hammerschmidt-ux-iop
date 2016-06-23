@@ -27,20 +27,20 @@
 
   <article>
     <header>
+      <img class="profilePic" src="sass/hank.png"/>
       <h1>
-        <img class="profilePic" src="sass/caveman.jpg"/>
-        <strong>John Smith</strong>'s Profile
+        <strong>H. Hill</strong>'s Profile
       </h1>
       <button class="btn-userMinimize" onclick="changeText(this); toggle('userProfile');">
-        Show Info
+        Click to Display Info
       </button>
       <script>
       function changeText(id) {
-          if(id.innerHTML === "Hide Info") {
-              id.innerHTML = "Show Info";
+          if(id.innerHTML === "Click to Hide Info") {
+              id.innerHTML = "Click to Display Info";
           }
           else {
-              id.innerHTML = "Hide Info";
+              id.innerHTML = "Click to Hide Info";
           }
       }
       function toggle(id) {
@@ -54,6 +54,10 @@
     </header>
     <div id = "userProfile" style="display:none">
       <table>
+        <tr>
+          <th>Full Name:</th>
+          <td>Hank Hill</th>
+        </tr>
         <tr>
           <th>User ID:</th>
           <td>xXsW4GSL4Y3rXx</td>

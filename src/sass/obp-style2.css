@@ -72,12 +72,25 @@ body {
     width: 32em;
     height: 30em;
     border-radius: 0.4em; }
+    body article header {
+      background-image: url("ocean.gif");
+      background-position: center;
+      background-size: 100%;
+      border: 1px solid white;
+      border-bottom: none;
+      border-top-left-radius: 0.4em;
+      border-top-right-radius: 0.4em; }
     body article h1 {
       text-align: center;
-      margin: 1em; }
+      text-shadow: 0px 0px 2px black;
+      margin: 1em 0em 0em 0em; }
     body article .btn-userMinimize {
       background-color: white;
-      margin-bottom: 1px;
+      font-family: Helvetica, Arial, Tahoma, sans-serif;
+      font-weight: bold;
+      color: black;
+      border: 1px solid white;
+      margin-bottom: 0px;
       width: 100%;
       height: 2em; }
     body article table {
@@ -89,13 +102,26 @@ body {
       body article table td {
         width: 9em; }
     body article .profilePic {
-      width: 2em;
-      height: 2em;
-      border: 1px solid white; }
+      width: 8em;
+      height: 8em;
+      margin-top: 2em;
+      margin-left: 12em;
+      margin-bottom: -2.5em;
+      border-radius: 0.4em;
+      box-shadow: 0px 0px 5px 0px black; }
     body article #userProfile {
       border: 1px solid white;
-      box-shadow: 0px 0px 5px 0px black;
-      display: block; }
+      display: block;
+      background-color: #95a5a6;
+      border-bottom-left-radius: 0.4em;
+      border-bottom-right-radius: 0.4em; }
+      body article #userProfile table {
+        border: none; }
+        body article #userProfile table tr {
+          background-color: #95a5a6;
+          text-shadow: 0px 0px 1px black; }
+        body article #userProfile table tr:nth-child(even) {
+          background-color: #bdc3c7; }
 
 #homePageContent {
   position: relative; }
@@ -104,9 +130,3 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 0.4em; }
-  #homePageContent h1 {
-    top: 9em;
-    left: 8em;
-    text-shadow: 0 0 2px black;
-    position: absolute;
-    z-index: 1; }
