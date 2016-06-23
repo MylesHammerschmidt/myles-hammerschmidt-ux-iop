@@ -31,11 +31,28 @@
         <img class="profilePic" src="sass/caveman.jpg"/>
         <strong>John Smith</strong>'s Profile
       </h1>
-      <button class="btn-userMinimize" onclick="minimize()">
-        Hide Info
+      <button class="btn-userMinimize" onclick="changeText(this); toggle('userProfile');">
+        Show Info
       </button>
+      <script>
+      function changeText(id) {
+          if(id.innerHTML === "Hide Info") {
+              id.innerHTML = "Show Info";
+          }
+          else {
+              id.innerHTML = "Hide Info";
+          }
+      }
+      function toggle(id) {
+         var e = document.getElementById(id);
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+      }
+      </script>
     </header>
-    <div class = "userProfile">
+    <div id = "userProfile" style="display:none">
       <table>
         <tr>
           <th>User ID:</th>
@@ -51,11 +68,6 @@
         </tr>
       </table>
     </div>
-    <script>
-      function minimize() {
-        document.getElementsByClassName("userProfile").style.display = none;
-      }
-    </script>
   </article>
 
 </body>
