@@ -1,12 +1,16 @@
 $font-stack: Helvetica, Arial, Tahoma, sans-serif;
-$border-uni: 1px solid #95a5a6;
+$border-uni: 1px solid #979da2;
 $border-rad: 0.4em;
-$sunset: url("sunset.gif");
+
 $clouds: url("clouds.gif");
-$stdShadow: 0px 0px 5px 0px #95a5a6;
+$carbonfiber: url("carbonfiber.jpg");
+$hank: url("hank.png");
+$ocean: url("ocean.gif");
+
+$stdShadow: 0px 0px 5px 0px black;
 
 html{
-  background: white;
+  background-color: black;
 }
 
 .pageHeader {
@@ -14,10 +18,8 @@ html{
   background-color: #95a5a6;
   background-image: $clouds;
   padding:1em 1em 1em 1em;
-  border: $border-uni;
   border-top-left-radius: $border-rad;
   border-top-right-radius: $border-rad;
-  box-shadow: $stdShadow;
 
   a {
     text-decoration: none;
@@ -25,6 +27,7 @@ html{
   }
   h1 {
     color: #ecf0f1;
+    font-size: 2em;
     margin-top: 1em;
     margin-left: 1.5em;
     text-shadow: 0px 0px 5px #2c3e50;
@@ -54,14 +57,12 @@ html{
     }
     a:hover {
       color: #ecf0f1;
-      background-color: #bdc3c7;
-      background: radial-gradient(#bdc3c7, #bdc3c7, #ecf0f1);
+      font-weight: bolder;
       opacity: 1.0;
     }
     .current {
       font-weight: bold;
       border: 1px dotted;
-      background-color: #bdc3c7;
       opacity: 0.6;
     }
   }
@@ -73,30 +74,94 @@ body {
   margin:0 auto;
   width:40em;
   background-color: #ecf0f1;
+  background-image: $carbonfiber;
+  background-size: 4em;
   border: $border-uni;
-  border: 5px;
   border-radius: $border-rad;
-  box-shadow: 0px 0px 20px 0px #95a5a6;
+  box-shadow: $stdShadow;
 
   .pageTitle {
     color: #FFFFFF;
-    background-color:#bdc3c7;
+    background-color:#979da2;
     text-align: left;
     text-shadow: 0px 0px 2px black;
     padding-left: 2em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
+    border: border-uni;
   }
 
   article {
-    background-color: #bdc3c7;
+    background-color: #979da2;
     color: white;
     margin: 0 auto;
     padding: 1em 1em 1em 1em;
     width: 32em;
     height: 30em;
-    border: $border-uni;
     border-radius: $border-rad;
+
+    header {
+      background-image: $ocean;
+      background-position: center;
+      background-size: 100%;
+      border: 1px solid white;
+      border-bottom: none;
+      border-top-left-radius: $border-rad;
+      border-top-right-radius: $border-rad;
+    }
+
+    h1 {
+      text-align: center;
+      text-shadow: 0px 0px 2px black;
+      margin: 1em 0em 0em 0em;
+    }
+    .btn-userMinimize {
+      background-color: white;
+      font-family: $font-stack;
+      font-weight: bold;
+      color: black;
+      border: 1px solid white;
+      margin-bottom: 0px;
+      width: 100%;
+      height: 2em;
+    }
+    table {
+      border-bottom: 1px solid white;
+      width: 100%;
+      th {
+        text-align: left;
+        width: 5em;
+      }
+      td {
+        width:9em;
+      }
+    }
+    .profilePic {
+      width: 8em;
+      height: 8em;
+      margin-top: 2em;
+      margin-left: 12em;
+      margin-bottom: -2.5em;
+      border-radius: $border-rad;
+      box-shadow: $stdShadow;
+    }
+    #userProfile {
+      border: 1px solid white;
+      display: block;
+      background-color: #95a5a6;
+      border-bottom-left-radius: $border-rad;
+      border-bottom-right-radius: $border-rad;
+      table {
+        border: none;
+        tr {
+          background-color: #95a5a6;
+          text-shadow: 0px 0px 1px black;
+        }
+        tr:nth-child(even) {
+          background-color: #bdc3c7;
+        }
+      }
+    }
   }
 }
 
@@ -108,12 +173,5 @@ body {
     width: 100%;
     height: 100%;
     border-radius: $border-rad;
-  }
-  h1 {
-    top: 9em;
-    left: 9em;
-    text-shadow: 0 0 2px black;
-    position: absolute;
-    z-index: 1;
   }
 }
