@@ -125,6 +125,25 @@ body {
         body article #userProfile table tr:nth-child(even) {
           background-color: #bdc3c7; }
 
+#distraction {
+  float: right;
+  width: 5em;
+  height: 5em;
+  border-radius: 3em;
+  background-image: url("doge.jpg");
+  background-size: 5em 4em;
+  margin-right: 2em;
+  opacity: 0.05; }
+  #distraction img {
+    width: 4em;
+    height: inherit; }
+
+#distraction:hover {
+  background-image: url("swim.gif");
+  background-size: cover;
+  border: 1px solid white;
+  opacity: 1; }
+
 #homePageContent {
   position: relative; }
   #homePageContent img {
