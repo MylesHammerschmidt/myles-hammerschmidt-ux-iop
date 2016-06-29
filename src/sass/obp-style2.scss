@@ -6,6 +6,8 @@ $clouds: url("clouds.gif");
 $carbonfiber: url("carbonfiber.jpg");
 $hank: url("hank.png");
 $ocean: url("ocean.gif");
+$doge: url("doge.jpg");
+$swim: url("swim.gif");
 
 $stdShadow: 0px 0px 5px 0px black;
 
@@ -166,6 +168,27 @@ body {
       }
     }
   }
+}
+
+#distraction {
+  float: right;
+  width: 5em;
+  height: 5em;
+  border-radius: 3em;
+  background-image: $doge;
+  background-size: 5em 4em;
+  margin-right: 2em;
+  opacity: 0.05;
+  img {
+    width: 4em;
+    height: inherit;
+  }
+}
+#distraction:hover {
+  background-image: $swim;
+  background-size: cover;
+  border: 1px solid white;
+  opacity: 1;
 }
 
 #homePageContent {
