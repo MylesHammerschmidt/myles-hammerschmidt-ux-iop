@@ -1,6 +1,10 @@
-$font-stack: Helvetica, Arial, Tahoma, sans-serif;
+$font-stack: 'Lato', sans-serif;
 $border-uni: 1px solid #979da2;
 $border-rad: 0.4em;
+
+$clr_background: #2c3e50;
+$green1: #1abc9c;
+$green2: #16a085;
 
 $clouds: url("clouds.gif");
 $carbonfiber: url("carbonfiber.jpg");
@@ -12,61 +16,25 @@ $swim: url("swim.gif");
 $stdShadow: 0px 0px 5px 0px black;
 
 html{
-  background-color: black;
+  background-color: $clr_background;
 }
 
 .pageHeader {
-  font-family: $font-stack;
-  background-color: #95a5a6;
-  background-image: $clouds;
-  padding:1em 1em 1em 1em;
-  border-top-left-radius: $border-rad;
-  border-top-right-radius: $border-rad;
+  padding: 2em;
+  background-color: $green2;
+  color: white;
+  text-align: center;
 
   a {
     text-decoration: none;
     color:inherit;
   }
   h1 {
-    color: #ecf0f1;
+    margin: 0;
     font-size: 2em;
-    margin-top: 1em;
-    margin-left: 1.5em;
-    text-shadow: 0px 0px 5px #2c3e50;
   }
   h2 {
-    color: #ecf0f1;
-    margin:-1em 0 0 2em;
-    text-shadow: 0px 0px 5px #2c3e50;
-  }
-
-  nav {
-    text-shadow: 0px 0px 2px #2c3e50;
-    ul {
-      margin:1em 1em 1em 2em;
-      padding: 1em 0 0 0;
-      text-align: left;
-    }
-    li {
-      display: inline;
-      padding-left: 1em;
-    }
-    a {
-      color: #ecf0f1;
-      padding: .5em;
-      border: 1px solid;
-      border-radius: $border-rad;
-    }
-    a:hover {
-      color: #ecf0f1;
-      font-weight: bolder;
-      opacity: 1.0;
-    }
-    .current {
-      font-weight: bold;
-      border: 1px dotted;
-      opacity: 0.6;
-    }
+    margin: 0;
   }
 }
 
@@ -75,71 +43,107 @@ body {
   padding:0;
   margin:0 auto;
   width:40em;
-  background-color: #ecf0f1;
-  background-image: $carbonfiber;
-  background-size: 4em;
-  border: $border-uni;
-  border-radius: $border-rad;
-  box-shadow: $stdShadow;
 
-  .pageTitle {
-    color: #FFFFFF;
-    background-color:#979da2;
-    text-align: left;
-    text-shadow: 0px 0px 2px black;
-    padding-left: 2em;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    border: border-uni;
-  }
-
-  article {
-    background-color: #979da2;
+  .mainPage {
+    background: linear-gradient($green2, $clr_background);
     color: white;
     margin: 0 auto;
-    padding: 1em 1em 1em 1em;
-    width: 32em;
+    padding: 0em 2em 0em 2em;
+    width: auto;
     height: 30em;
-    border-radius: $border-rad;
 
-    header {
-      background-image: $ocean;
-      background-position: center;
-      background-size: 100%;
+    button {
+      font-family: $font-stack;
+      background-color: transparent;
       border: 1px solid white;
-      border-bottom: none;
-      border-top-left-radius: $border-rad;
-      border-top-right-radius: $border-rad;
+      color: white;
+      margin: 0;
     }
 
     h1 {
-      text-align: center;
-      text-shadow: 0px 0px 2px black;
-      margin: 1em 0em 0em 0em;
+      text-align: left;
+      margin: 0;
+      padding: 0;
     }
+
+    div {
+      display: inline-block;
+      height: 100%;
+      margin: 0;
+
+      h1 {
+        text-align: left;
+      }
+    }
+    .frm_createUser {
+      margin: 0;
+      padding: 0;
+      h3 {
+        margin: 0;
+      }
+    }
+    .btn_userCreate {
+      float: right;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 1em;
+      width: 8em;
+      height: 5em;
+      color: white;
+      font-weight: bold;
+    }
+    .ul_userList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 24em;
+      height: 100%;
+      overflow: auto;
+      box-shadow: 0px 0px 3px black;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      p {
+        font-size: 12px;
+      }
+      li {
+        display: block;
+        text-align: right;
+        padding: 1em;
+        margin-left: 0;
+        margin-bottom: -1px;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        border-bottom: 1px solid white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: auto;
+      }
+      h2 {
+        text-align: left;
+        margin: 0;
+      }
+      .btn_userMinimize {
+        float: right;
+        font-weight: bold;
+        width: 2.6em;
+        height: 2.6em;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+      table {
+        text-align: left;
+      }
+    }
+
     .btn-userMinimize {
       background-color: white;
       font-family: $font-stack;
-      font-weight: bold;
       color: black;
       border: 1px solid white;
       margin-bottom: 0px;
       width: 100%;
       height: 2em;
-    }
-    table {
-      border-radius: $border-rad;
-      width: 100%;
-      th {
-        text-align: left;
-        width: 5em;
-      }
-      td {
-        width:9em;
-      }
-      tr:nth-child(even) {
-        background-color: #bdc3c7;
-      }
     }
     .profilePic {
       width: 8em;
@@ -167,37 +171,5 @@ body {
         }
       }
     }
-  }
-}
-
-#distraction {
-  float: right;
-  width: 5em;
-  height: 5em;
-  border-radius: 3em;
-  background-image: $doge;
-  background-size: 5em 4em;
-  margin-right: 2em;
-  opacity: 0.05;
-  img {
-    width: 4em;
-    height: inherit;
-  }
-}
-#distraction:hover {
-  background-image: $swim;
-  background-size: cover;
-  border: 1px solid white;
-  opacity: 1;
-}
-
-#homePageContent {
-  position: relative;
-
-  img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: $border-rad;
   }
 }

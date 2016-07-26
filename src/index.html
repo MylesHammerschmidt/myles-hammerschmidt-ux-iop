@@ -1,37 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="datModule">
 
 <head>
 	<link rel="stylesheet" href="sass/obp-style2.css" />
+  <script src="/node_modules/angular/angular.js"></script>
+  <script src="/src/js/module.js"></script>
+  <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/node_modules/angular-resource/angular-resource.js"></script>
+
+  <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Lato:100">
 </head>
 
 <body>
 
 	<header class="pageHeader">
 		<hgroup>
-			<audio id="mysound" src="sass/music.m4a"></audio>
-			<a id="distraction"
-			onmouseover="document.getElementById('mysound').play(); "
-			onmouseout="document.getElementById('mysound').pause();"></a>
-			<h1><a href="index.html">Onboarding Project: Unit 5</a></h1>
+			<h1><a href="index.html">Onboarding Project: Unit 6</a></h1>
 			<h2><a href="index.html">Myles Hammerschmidt</a></h2>
 		</hgroup>
-		<nav>
-			<ul> <!-- id="current" signifies the current page -->
-				<li><a href="obp_user_profile.html">User Profile</a></li>
-				<li><a href="obp_user_list.html">User List</a></li>
-				<li><a href="obp_create_user.html">Create User</a></li>
-				<li><a href="obp_edit_user.html">Edit User</a></li>
-			</ul>
-		</nav>
-
 	</header>
 
-	<h1 class="pageTitle"> Home </h1>
-
-	<article id="homePageContent">
-		<img src="sass/water.gif"/>
-	</article>
+	<div class="mainPage">
+    <div style="float: right;">
+      <h1>Create User</h1>
+      <form class="frm_createUser">
+        <h3>User ID:<h3>
+        <input type="text" name="userID">
+        <h3>First Name:</h3>
+        <input type="text" name="firstName">
+        <h3>Last Name:</h3>
+        <input type="text" name="lastName">
+        <h3>Email:<h3>
+        <input type="text" name="email">
+        <h3>Phone:<h3>
+        <input type="text" name="phone">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+		<div>
+      <h1>User List</h1>
+      <ul class="ul_userList">
+        <li>
+          <button class="btn_userMinimize">+</button>
+          <h2>Bill Gates</h2>
+        </li>
+        <li>
+          <button class="btn_userMinimize">-</button>
+          <h2>Dave Chappelle</h2>
+          <table>
+            <tr>
+              <th>ID:</th>
+              <td>DervCherple</td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td>dervyCherps@zombo.com</td>
+            </tr>
+            <tr>
+              <th>Phone:</th>
+              <td>417-DRV-CHRP</td>
+            </tr>
+          </table>
+          <button>Edit Profile</button>
+        </li>
+        <li>
+          <button class="btn_userMinimize">+</button>
+          <h2>Hillary Clinton</h2>
+        </li>
+        <li>
+          <button class="btn_userMinimize">+</button>
+          <h2>John Smith</h2>
+        </li>
+        <li>
+          <button class="btn_userMinimize">+</button>
+          <h2>Beef Quesarito</h2>
+        </li>
+        <li>
+          <button class="btn_userMinimize">+</button>
+          <h2>Timmy Turner</h2>
+        </li>
+        <li>
+          <button class="btn_userMinimize">+</button>
+          <h2>Pinot Grigio</h2>
+        </li>
+      </ul>
+    </div>
+	</div>
 
 </body>
 </html>
