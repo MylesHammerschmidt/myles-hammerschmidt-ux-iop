@@ -59,6 +59,12 @@ body {
       color: white;
       margin: 0;
     }
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    button:active {
+      background-color: rgba(200, 256, 200, 0.3);
+    }
 
     h1 {
       text-align: left;
@@ -78,19 +84,15 @@ body {
     .frm_createUser {
       margin: 0;
       padding: 0;
+      input {
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+        font-family: $font-stack;
+      }
       h3 {
         margin: 0;
       }
-    }
-    .btn_userCreate {
-      float: right;
-      background-color: transparent;
-      border: 1px solid white;
-      border-radius: 1em;
-      width: 8em;
-      height: 5em;
-      color: white;
-      font-weight: bold;
     }
     .ul_userList {
       list-style: none;
@@ -111,6 +113,7 @@ body {
         padding: 1em;
         margin-left: 0;
         margin-bottom: -1px;
+        background-color: transparentize($green1, 0.8);
         border-top: 1px solid white;
         border-left: 1px solid white;
         border-bottom: 1px solid white;
@@ -124,26 +127,12 @@ body {
       }
       .btn_userMinimize {
         float: right;
-        font-weight: bold;
         width: 2.6em;
         height: 2.6em;
-        background-color: transparent;
-        color: white;
-        border: 1px solid white;
       }
       table {
         text-align: left;
       }
-    }
-
-    .btn-userMinimize {
-      background-color: white;
-      font-family: $font-stack;
-      color: black;
-      border: 1px solid white;
-      margin-bottom: 0px;
-      width: 100%;
-      height: 2em;
     }
     .profilePic {
       width: 8em;
